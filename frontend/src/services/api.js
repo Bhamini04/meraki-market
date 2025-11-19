@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL:"https://meraki-market.onrender.com/api",
   withCredentials: true, // IMPORTANT for JWT cookie
 });
 
@@ -41,3 +41,4 @@ api.interceptors.response.use(
 );
 
 export default api;
+
