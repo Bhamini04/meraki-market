@@ -1,0 +1,70 @@
+/*
+  TEMPLATE STYLES: These styles are used as a base template.
+  AI is allowed to modify these styles as needed.
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900 bg-slate-900 text-white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.nav-link {
+  color: #cbd5e1;
+  transition: 0.2s;
+}
+.nav-link:hover {
+  color: #f472b6;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  color: #cbd5e1;
+}
+
+.icon-wrapper {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge.pink { background: #ec4899; }
+.badge.purple { background: #a855f7; }
+
+.mobile-link {
+  color: #cbd5e1;
+  transition: 0.2s;
+}
+.mobile-link:hover { color: #f472b6; }
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  color: #cbd5e1;
+  transition: 0.2s;
+}
+.dropdown-item:hover {
+  background: rgba(168, 85, 247, 0.2);
+}
+.dropdown-icon {
+  width: 20px;
+  height: 20px;
+  color: #cbd5e1;
+}
