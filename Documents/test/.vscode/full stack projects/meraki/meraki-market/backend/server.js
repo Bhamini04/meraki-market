@@ -41,8 +41,9 @@ app.use("/api/users", userRoutes);
 
 app.get('/favicon.ico', (req, res) => res.status(204));
 app.get("/", (req, res) => {
-  res.send("Meraki Backend API Working ✔");
+  res.json({ message: "Meraki Backend API Working ✔" });
 });
+
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
