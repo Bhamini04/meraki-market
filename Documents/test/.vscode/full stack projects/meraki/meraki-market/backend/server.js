@@ -28,7 +28,7 @@ app.use(
     optionsSuccessStatus: 204
   })
 );
-
+app.options("*", cors());
 
 // Routes
 import authRoutes from "./routes/authRoutes.js";
