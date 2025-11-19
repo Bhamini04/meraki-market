@@ -39,6 +39,7 @@ app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/users", userRoutes);
 
+app.get('/favicon.ico', (req, res) => res.status(204));
 app.get("/", (req, res) => {
   res.send("Meraki Backend API Working ✔");
 });
