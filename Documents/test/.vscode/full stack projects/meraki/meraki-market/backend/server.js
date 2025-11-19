@@ -16,12 +16,17 @@ app.use(cookieParser());
 app.use(morgan("dev"));
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:3001",
+      "https://meraki-market.onrender.com"
+    ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+
 
 // Routes
 import authRoutes from "./routes/authRoutes.js";
